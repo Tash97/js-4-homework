@@ -26,7 +26,7 @@ function answer_beautifier(array, answer){
 let array1 = ["The cubed numbers whose values are less than 1000 are "];
 let answer1 = "Question 1: ";
 
-for(let i = 1; i * i * i < 1000; i++){
+for(let i = 1; i ** 3 < 1000; i++){
         array1.push(i);
 }
 answer_beautifier(array1, answer1);
