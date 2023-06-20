@@ -9,6 +9,7 @@
 // Input: let places = [" ","Argentina", " ", "San Diego","","  ","","Boston","New York"]
 // Output: ['Argentina', 'San Diego', 'Boston', 'New York']
 
+
 //* 2. Write an anonymous function that sorts this list by the last name
 // Input: let author = ["Joel Carter", "Victor aNisimov", "Andrew P. Garfield","David hassELHOFF","Gary A.J. Bernstein"]
 // Output: ['Victor aNisimov', 'Gary A.J. Bernstein', 'Joel Carter', 'Andrew P. Garfield', 'David hassELHOFF']
