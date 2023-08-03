@@ -6,6 +6,7 @@
 //* 1. Reverse the list below in-place using an in-place algorithm.
 // For extra credit: Reverse the strings at the same time.
 // words = ['this' , 'is', 'a', 'sentence', '.']
+let words = ['this' , 'is', 'a', 'sentence', '.']
 // # Output: words = ['.', 'ecnetnes', 'a', 'si', 'sith']
 
 //* 2. Create a function that counts how many distinct words are in the string 

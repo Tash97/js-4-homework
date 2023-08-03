@@ -40,14 +40,17 @@ console.log(map);
 //* 3. Convert the list below from Celsius to Farhenheit, using the map function
 // # F = (9/5)*C + 32
 // 
-let places = [('Nashua',32),("Boston",12),("Los Angelos",44),("Miami",29)]
+let places = [{name: 'Nashua', temperature: 32},{name: "Boston", temperature: 12},{name: "Los Angelos", temperature: 44,},{name: "Miami", temperature: 29}];
 // Output: [('Nashua', 89.6), ('Boston', 53.6), ('Los Angelos', 111.2), ('Miami', 84.2)]
+ 
 
-
-
-
-console.log('Question 3:\nI think question 3 might not be possible?\nWhen I grab an item from the places array it only shows the second item in each parenthesis\nUpon further research, I believe the comma in the parenthesis is working as a comma operator\nAnd is only allowing the last value in each array item to be returned\nThus making it impossible to grab the first item in each parenthesis');
-
+function CtoF(array) {
+    for(let i= 0; i < array.length; i++){
+        array[i].temperature = (9/5) * array[i].temperature + 32;
+    }
+    return array;
+}
+console.log(CtoF(places));
 
 //* 4. Write a recursion function to perform the fibonacci sequence up to the number passed in.
 //? You don't need to log out 'iteration 0' etc if you don't want to. 
@@ -74,10 +77,10 @@ function fib(num){
             num1 = num2;
             num2 = sum;
             i++;
-            console.log(`Iteration ${i}: ${sum}`);
+            console.log(`Iteration ${i -1}: ${sum}`);
             fibi(num, num1, num2, sum, i);
         }
     }
     fibi(num, num1, num2, sum, i);
 }
-fib(5);
+fib(7);
